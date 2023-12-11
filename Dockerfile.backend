@@ -8,6 +8,10 @@ RUN pip install --upgrade pip && \
     pip install --upgrade setuptools && \
     pip install -r requirements.txt
 
+ENV OPEN_AI_ORG = 'xxx'
+ENV OPEN_AI_KEY = 'xxx'
+ENV ELEVEN_LABS_API_KEY = 'xxx'
+
 COPY ./backend /app
 
 EXPOSE 8000
